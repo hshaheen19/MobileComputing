@@ -37,5 +37,9 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(applicationContext, MapActivity::class.java)
             startActivity(intent)
         }
+
+        val data = arrayOf("Oulu","Helsinki","Tampere");
+        val reminder_adapter = ReminderAdapter(applicationContext,data)
+        list.adapter = reminder_adapter
     }
 }
